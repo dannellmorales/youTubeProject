@@ -1,0 +1,32 @@
+
+ .ytlogo{
+    grid-area: n1;
+    display:grid;
+    margin-top: 30px;
+    margin-left:100PX;
+    height: 30px;
+    width:80px;
+}
+
+
+
+imgBut {
+    grid-area: n1;
+    display:grid;
+    color: #900;
+    border: 1px solid #900;
+    font-weight: bold;
+    width: 6px;
+    height: 5px;
+  }
+ 
+  .srcBut{
+    margin-left: 2px;
+    text-align: center;
+    height:15px;
+    width:15px;
+  }
+  .searchBox{
+    height:19px;
+    vertical-align: top;
+  } 

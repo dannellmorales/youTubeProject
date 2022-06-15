@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  grid-template-areas: 
+  "n1 n1 n2 n2 n3 n3"
+  "b c c c c c"
+  "b c c c c c"
+  ;
+}
+
+.ytlogo{
+  grid-area: n1;
+  display:grid;
+}
+.search{
+  grid-area: n2;
+  display:grid;
+}
+.searchBox{
+  grid-area: n2;
+  display:grid;
+}
