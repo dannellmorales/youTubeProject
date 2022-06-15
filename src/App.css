@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+.grid {
+  display: grid;
+  grid-template-areas: 
+
+  "o l l sb sb n n"
+  "o b c c c c c"
+  "o b c c c c c";
+}
+
+.mag{
+  grid-area: n;
+  display:grid;
+  height: 15px;
+  width:15px;
+  margin: auto;
+}
+.navbar-header .navbar-brand .sb {
+  float: left;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  align-content: center;
+}
+/*search title*/
+.search{
+  font-size: 20px;
+  margin-left: 22px;
+}
+
+/*search Form*/
+.sb{
+height:40px;
+width: 800px;
+float:center;
+margin-top: 37px;
+}
+
+
+.logoBut .ytlogo{
+  grid-area: l;
+  display:grid;
+  grid-gap:20px;
+  height:50px;
+}

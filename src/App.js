@@ -8,9 +8,9 @@ import Nav from "./Components/Common/Nav";
 function App() {
   console.log(process.env)
   return (
-<>
+<div className="grid">
 <Nav/>
-</>
+</div>
 
   )
 }
