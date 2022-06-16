@@ -1,4 +1,40 @@
 
- 
+ .gridNav {
+    display: grid;
+    grid-template-areas: 
+    "n n n n";
+  }
 
+  .navWrap{
+    margin-top: 30px;
+    grid-area: n;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
 
+  .mag{
+    grid-area: n;
+    height: 15px;
+    width:15px;
+    margin: auto;
+  }
+  nav{
+    width:100%;
+  }
+  .logo .ytlogo{
+    height: 30px;
+    width: 60px
+  }
+  .sb{
+    font-size: 25px;
+  }
+  .navWrap .sb{
+    width: 500px;
+    height: 35px;
+  }
+  .imgBut .mag{
+    height: 30px;
+    width: 30px 
+ }
