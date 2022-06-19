@@ -1,4 +1,4 @@
-/* 
+
  .gridNav {
     display: grid;
     grid-template-areas: 
@@ -21,24 +21,35 @@
     margin-top: 1px;
 
   }
+
+  .sf{
+    height:30px;
+    width:400px;
+  }
+
+  .select{
+    height:35px;
+  }
   nav{
     width:100%;
   }
   .logo .ytlogo{
-    height: 21px;
-    width: 60px;
+    height: 30px;
+    width:90px;
+
   }
   .sb{
     font-size: 25px;
-   
   }
   .navWrap .sb {
+    margin-top: 300px;
     width: 500px;
     height: 24px;
     margin-top: 2px;
    
   }
   .imgBut .mag {
-    height: 20px;
-    width: 20px 
- } */
+    height: 18px;
+    width: 20px;
+    float:30px;
+ }

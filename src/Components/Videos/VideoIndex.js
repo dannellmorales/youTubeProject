@@ -1,17 +1,12 @@
 import React from 'react'
+import { useEffect } from "react";
+import {getAllVideos} from "../../API/Fetch"
 
 export default function VideoIndex() {
-  
-  getAllVideos(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`)
-      .then((response) =>response.json()))
-      .catch((json) => {
-        console.error(error);
-        this.setState({ loadingError: true });
-      });
-  }
-  
-  
-  
+  console.log(process.env)
+  useEffect(()=> {
+   getAllVideos()
+  }, [])
   
   return (
     <div>VideoIndex</div>
