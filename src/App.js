@@ -12,7 +12,7 @@ function App() {
   const [submit, setSubmit] = useState(false)
   
   useEffect(() => {
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&type=video&q=${search}&key=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&type=video&q=${search}&key=${process.env.REACT_APP_API_KEY}`)
       .then((response) => response.json())
       .then((data) => {
         setVideos(data.items)
@@ -26,7 +26,7 @@ function App() {
         <Nav search={search} setSearch={setSearch} submit={submit} setSubmit={setSubmit} />
         <Routes>
           <Route className="vids" path="/" element={<Home videos={videos} />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/aboutpage" element={<AboutPage />} />
 
         </Routes>
       </div>
