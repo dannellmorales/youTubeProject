@@ -1,7 +1,11 @@
 import React from 'react'
+import YouTube from 'react-youtube'
 
-export default function Home() {
+export default function Home({videos}) {
+  
   return (
-    <div>Home</div>
+    <div className="homePage">
+      {videos.map((video) => <YouTube videoId={video.id.videoId} />)}
+    </div>
   )
 }

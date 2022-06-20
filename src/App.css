@@ -38,7 +38,22 @@
 }
 .grid {
   display: grid;
-  grid-template-areas: 
-  "n n n n";
+  grid-template-areas:
+    "n n n n"
+    "v v v v"
+    "v v v v";
+}
+
+.homePage {
+  grid-area: v ;
+  display: flex;
+  grid-gap:10px;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 50px;
 }
 
