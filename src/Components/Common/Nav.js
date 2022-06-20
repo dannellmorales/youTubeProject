@@ -1,5 +1,4 @@
 import "./Nav.css";
-import Mag from "./Mag.png"
 import Search from "./Search";
 
 
@@ -7,10 +6,9 @@ export const Nav = ({ setSearch, setMaxResults }) => {
 
     return (
         <header>
-    
-            <aside>
+            <div>
                 <Search setSearch={setSearch} setMaxResults={setMaxResults} />
-            </aside>
+            </div>
         </header>
     );
 
