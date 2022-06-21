@@ -47,7 +47,7 @@
 .homePage {
   grid-area: v ;
   display: flex;
-  grid-gap:10px;
+  grid-gap:20px;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   flex-direction: row-reverse;
@@ -56,4 +56,3 @@
   flex-wrap: wrap;
   height: 50px;
 }
-

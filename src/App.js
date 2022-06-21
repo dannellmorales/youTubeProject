@@ -4,6 +4,7 @@ import './App.css';
 import Home from "./Components/Home/Home";
 import Nav from "./Components/Common/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import AboutPage from "./Components/About/AboutPage";
 
 
 function App() {
@@ -27,7 +28,6 @@ function App() {
         <Routes>
           <Route className="vids" path="/" element={<Home videos={videos} />} />
           <Route path="/aboutpage" element={<AboutPage />} />
-
         </Routes>
       </div>
     </Router>

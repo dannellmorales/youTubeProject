@@ -19,9 +19,6 @@ function Nav({ search, setSearch, submit, setSubmit }) {
     return (
         <header className="gridNav Nav">
             <div className="navWrap">
-                <Link to="/">
-                        <button><img className="ytlogo" src="https://bit.ly/3bkkwde" /> </button>
-                    </Link>
                 <form onSubmit={handleSubmit}>
                 <input value={search} onChange={handleChange}/>                 
                 <button>Search</button>
@@ -31,8 +28,3 @@ function Nav({ search, setSearch, submit, setSubmit }) {
     );
 }
 export default Nav;
-{/* <Link to="/">
-                        <button><img className="ytlogo" src="https://bit.ly/3bkkwde" /> </button>
-                    </Link> */}
-
-
