@@ -25,13 +25,12 @@ function App() {
       <div className="App">
         <Nav search={search} setSearch={setSearch} submit={submit} setSubmit={setSubmit} />
         <Routes>
-          <Route className="vids" path="/" element={<Home videos={videos} />} />
-          <Route path="/aboutpage" element={<AboutPage />} />
+          <Route path="/" element={<Home videos={videos} />} />
+          {/* <Route path="/aboutpage" element={<AboutPage />} /> */}
 
         </Routes>
       </div>
     </Router>
   )
 }
-
 export default App;
