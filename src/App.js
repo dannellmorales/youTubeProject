@@ -3,10 +3,16 @@ import { useEffect, useState } from "react";
 import './App.css';
 import Home from "./Components/Home/Home";
 import Nav from "./Components/Common/Nav";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Components/Common/About";
 import VideoListing from "./Components/Videos/VideoListing";
+// import Navbar from "./Components/Navbar";
 // import Video "./Components/Show/Video"
+import sidebar from "./Components/sidebar";
+import Anime from "./Components/Common/Anime";
+import { Link } from "react-router-dom";
+
+
 
 function App() {
   const [videos, setVideos] = useState([])
@@ -24,10 +30,14 @@ function App() {
     <Router>
       <div className="App">
         <Nav setSearch={setSearch} setMaxResults={setMaxResults} />
+        <Anime />
+        <sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/videos" element={<VideoListing videos={videos} />} />
+          <Route path="/sidebar" element={<sidebar sidebar={sidebar} />} />
+         
         </Routes>
       </div>
     </Router>

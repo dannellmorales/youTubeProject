@@ -1,0 +1,13 @@
+.Nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(130, 7, 15);
+    color: white;
+}
+.image{
+    float: right;
+    margin-top: -50px;
+    margin-right: 600px
+}
