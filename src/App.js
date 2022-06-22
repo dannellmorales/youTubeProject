@@ -13,7 +13,7 @@ function App() {
   const [submit, setSubmit] = useState(false)
   
   useEffect(() => {
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&type=video&q=${search}&key=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&type=video&q=${search}&key=${process.env.REACT_APP_API_KEY}`)
       .then((response) => response.json())
       .then((data) => {
         setVideos(data.items)

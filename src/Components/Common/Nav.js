@@ -14,12 +14,11 @@ function Nav({ search, setSearch, submit, setSubmit }) {
         event.preventDefault();
         submit ? setSubmit(false) : setSubmit(true)
     }
-
     return (
         <header className="gridNav Nav">
             <div className="navWrap">
             <form onSubmit={handleSubmit}>
-                <input value={search} onChange={handleChange}/>                 
+                <input value={search} onChange={handleChange}/>                   
                 <button>Search</button>
                 </form>
             </div>
