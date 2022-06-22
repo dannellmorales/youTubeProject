@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Search.css";
-// import { Link } from "react-router-dom"
-
+import {Link} from "react-router-dom"
 function Nav({ search, setSearch, submit, setSubmit }) {
 
 
@@ -17,9 +16,17 @@ function Nav({ search, setSearch, submit, setSubmit }) {
     return (
         <header className="gridNav Nav">
             <div className="navWrap">
-            <form onSubmit={handleSubmit}>
-                <input value={search} onChange={handleChange}/>                   
-                <button>Search</button>
+                <div className="navBar__left">
+                    <h5>
+                        <Link to="/">Home</Link>
+                    </h5>
+                    <h5>
+                        <Link to="/aboutpage">About</Link>
+                    </h5>
+                </div>
+                <form onSubmit={handleSubmit}>
+                    <input value={search} onChange={handleChange} />
+                    <button>Search</button>
                 </form>
             </div>
         </header>
