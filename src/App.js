@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Router>
-      {console.log(videos)}
+      {/* {console.log(videos)} */}
       <div className="App">
         <Nav search={search} setSearch={setSearch} submit={submit} setSubmit={setSubmit} />
         <Routes>
