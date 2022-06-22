@@ -12,16 +12,16 @@ function Nav({ search, setSearch, submit, setSubmit }) {
     const handleSubmit = (event) => {
         event.preventDefault();
         submit ? setSubmit(false) : setSubmit(true)
+
     }
     return (
         <header className="gridNav Nav">
             <div className="navWrap">
-                <div className="navBar__left">
+                <div>
                     <h5>
-                        <Link to="/">Home</Link>
-                    </h5>
-                    <h5>
-                        <Link to="/aboutpage">About</Link>
+                        <Link to="/" className="links">Home</Link>
+                <br/>
+                        <Link to="/aboutpage" className="links">About</Link>
                     </h5>
                 </div>
                 <form onSubmit={handleSubmit}>

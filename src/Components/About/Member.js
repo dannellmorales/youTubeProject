@@ -1,6 +1,4 @@
-import "./AboutTeam.css";
-
-const Member = ({ id, firstName, lastName, title, description, profilePicture }) => {
+const Member = ({firstName, lastName, title, description, profilePicture }) => {
     
     let name = `${firstName} ${lastName}`;
 

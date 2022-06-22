@@ -1,60 +1,62 @@
-
- .gridNav {
-    display: grid;
-    grid-template-areas: 
+.links {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blanchedalmond;
+  margin-right: 100px;
+}
+.gridNav {
+  display: grid;
+  grid-template-areas:
     "n n n n"
     "v v v v"
     "v v v v";
-  }
-
-  .navWrap{
-    margin-top: 30px;
-    grid-area: n;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .mag{
-    grid-area: n;
-    height: 15px;
-    width:15px;
-    margin-top: 1px;
-  }
-
-  .form{
-    height:20px;
-    width: 350px;
-  }
-
- .sf{
-    height:40px;
-    width:400px;
-  } */
+}
 
 
-  nav{
-    width:100%;
-  }
-  .ytlogo{
-    
-    height: 40px;
-    
+.navWrap {
+  margin-top: 30px;
+  grid-area: n;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 
-  }
-  .sb{
-    font-size: 25px;
-  }
-  .navWrap .sb {
-    margin-top: 300px;
-    width: 500px;
-    height: 24px;
-    margin-top: 2px;
-    align-items: center;
-  }
-  .imgBut .mag {
-    height: 18px;
-    width: 20px;
-   flex:auto;
- }
+.mag {
+  grid-area: n;
+  height: 15px;
+  width: 15px;
+  margin-top: 1px;
+
+
+}
+
+.form {
+  height: 20px;
+  width: 350px;
+}
+
+.sf {
+  height: 40px;
+  width: 400px;
+}
+ nav {
+  width: 100%;
+}
+.ytlogo {
+  height: 40px;
+}
+.sb {
+  font-size: 25px;
+}
+.navWrap .sb {
+  margin-top: 300px;
+  width: 500px;
+  height: 24px;
+  margin-top: 2px;
+  align-items: center;
+}
+.imgBut .mag {
+  height: 18px;
+  width: 20px;
+  flex: auto;
+}

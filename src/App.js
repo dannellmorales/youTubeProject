@@ -11,18 +11,19 @@ function App() {
   const [videos, setVideos] = useState([])
   const [search, setSearch] = useState('')
   const [submit, setSubmit] = useState(false)
-  
   useEffect(() => {
+
     fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&type=video&q=${search}&key=${process.env.REACT_APP_API_KEY}`)
       .then((response) => response.json())
       .then((data) => {
         setVideos(data.items)
       });
   }, [submit]);
+  
 
   return (
+
     <Router>
-      {console.log(videos)}
       <div className="App">
         <Nav search={search} setSearch={setSearch} submit={submit} setSubmit={setSubmit} />
         <Routes>
